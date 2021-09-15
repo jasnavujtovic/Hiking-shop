@@ -26,3 +26,115 @@ $gray: #6c757d;
 $text: #4a4a4a;
 $borders: #eeeeee;
 */
+
+/****************
+basic style
+****************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--bodyFont);
+    font-size: var(--fontSize);
+    line-height: 1.6;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--headings);
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+button {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+}
+/****************
+nav
+****************/
+nav {
+    text-align: center;
+    border-top: 4px solid var(--primary);
+}
+nav .top-bar {
+    padding: 10px 0;
+}
+nav h1{
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+nav i {
+    color: var(--black);
+    font-size: 2rem;
+}
+nav ul{
+    border-top: 1px solid var(--borders);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+nav ul li {
+    margin-left: 50px;
+}
+nav ul a {
+    color: var(--black);
+}
+nav ul a:hover {
+    color: var(--primary);
+    transition: var(--transition);
+    cursor: pointer;
+}
+/****************
+header
+****************/
+header {
+    background-image: url(/img/header.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header div:first-child {
+    flex: 0 0 40%;
+    background: rgba(255,255,255,.7);
+    padding: 30px;
+}
+header div:last-child {
+    flex: 0 0 40%;
+}
+header hr {
+    width: 50px;
+    background: var(--primary);
+    height: 3px;
+    border: none;
+    margin: 20px 0;
+}
+header h2 {
+    font-size: 1.4rem;
+}
+header p {
+    padding-bottom: 20px;
+}
+header button {
+    background: var(--primary);
+    color: var(--white);
+    text-transform: uppercase;
+}
+button:hover{
+    cursor: pointer;
+    background: var(--black);
+    transition: var(--transition);
+}

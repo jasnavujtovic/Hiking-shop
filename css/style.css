@@ -367,3 +367,12 @@ input[type="number"] {
     color: var(--primary);
     margin-left: 10px;
 }
+/****************
+about
+****************/
+.about p {
+    margin-bottom: 20px;
+}
+.about img {
+    border: none;
+}

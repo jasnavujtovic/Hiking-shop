@@ -71,6 +71,10 @@ button {
     cursor: pointer;
     background: var(--black);
 }
+.icons i{
+    color: var(--primary);
+    margin-left: 10px;
+}
 /****************
 nav
 ****************/
@@ -357,15 +361,11 @@ input[type="number"] {
     text-transform: none;
     color: var(--primary);
 }
-.single hr {
+hr {
     margin: 20px 0;
     background: var(--borders);
     height: 3px;
     border: none;
-}
-.single .icons i{
-    color: var(--primary);
-    margin-left: 10px;
 }
 /****************
 about
@@ -375,4 +375,45 @@ about
 }
 .about img {
     border: none;
+}
+/****************
+contact
+****************/
+.contact {
+    padding: var(--padding);
+}
+.contact h2 {
+    margin-bottom: 20px;
+}
+.contact h2::before {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 3px;
+    margin-bottom: 20px;
+    background: var(--primary);
+}
+.wrapp {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form {
+    flex: 0 0 48%;
+}
+.contact textarea,
+.contact input {
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid var(--borders);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.contact textarea:focus,
+.contact input:focus {
+    border: 1px solid var(--primary);
+    outline: none;
+}
+.contact .btn {
+    margin-top: 20px;
 }

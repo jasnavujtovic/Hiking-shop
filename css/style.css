@@ -155,6 +155,9 @@ items
     border: 1px solid var(--borders);
     padding: 20px;
 }
+.items .item:hover{
+    border: 1px solid var(--primary);
+}
 .items span {
     color: var(--primary);
 }
@@ -297,8 +300,16 @@ products
     margin-bottom: 30px;
     padding: 20px;
 }
+.products .item:hover{
+    border: 1px solid var(--primary);
+    
+}
 .products img {
     width: 100%;
+    transition: transform .5s;
+}
+.products img:hover{
+    transform: scale(1.1);
 }
 .products a {
     text-transform: none;
@@ -328,6 +339,7 @@ single/boots
 .single .col {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .single img {
     width: 100%;
@@ -416,4 +428,78 @@ contact
 }
 .contact .btn {
     margin-top: 20px;
+}
+/***************
+RESPONSIVE
+****************/
+@media(max-width: 768px){
+    .container {
+        width: 90%;
+    }
+    /* nav */
+    nav ul li {
+        margin-left: 10px;
+    }
+    /* header */
+    header {
+        background-size: cover;
+        background-position:center right;
+    }
+    header div:first-child {
+        flex: 0 0 90%;
+        margin-top: 70px;
+        padding: 20px;
+    }
+    header div:last-child {
+        flex: 0 0 0%;
+    }
+    .items {
+        padding: 50px 0;
+    }
+    /* subscribe */
+    .subscribe {
+        padding: 50px 0;
+    }
+    .subscribe div {
+        flex: 0 0 90%;
+    }
+    /* footer */
+    footer {
+        padding: 50px 0;
+    }
+    footer ul li {
+        margin-left: 20px;
+    }
+    footer ul li:last-child {
+        margin-right: 20px;
+    }
+    .products {
+        padding: 50px 0;
+    }
+    .products .item {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+    /* about/single */
+    .single {
+        padding: 50px 0;
+    }
+    .single .img {
+        flex: 0 0 100%;
+    }
+    .single .text {
+        flex: 0 0 100%;
+    }
+    .about img {
+        margin-bottom: 20px;
+    }
+    /* contact */
+    .contact {
+        padding: 50px 0;
+    }
+    .contact form {
+        flex: 0 0 100%;
+        margin-top: 20px;
+    }
+
 }
